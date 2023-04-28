@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    
+    <head>
+        <title>Website movement
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        </head>
+
+        <style>
+            .row{
+                margin-top:40px;
+            }
+            .left-column{
+                float:left;
+                width:30%;
+                margin-left:30px;
+            }
+            .center-column{
+                width:30%;
+                margin:auto;
+            }
+            .right-column{
+                float:right;
+                width:30%;
+                margin:auto;
+            }
+            .image-container{
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        </div>
+        <img src="img/ch1s.png" onmouseover="this.src='img/ch1sc.png';" onmouseout="this.src='img/ch1s.png';"/>
+        <img src="img/ch2s.png" onmouseover="this.src='img/ch2sc.png';" onmouseout="this.src='img/ch2s.png';"/>
+        <img src="img/ch3s.png" onmouseover="this.src='img/ch3sc.png';" onmouseout="this.src='img/ch3s.png';"/>
+
+        <img src="img/ch4s.png" onmouseover="this.src='img/ch4sc.png';" onmouseout="this.src='img/ch4s.png';"/>
+        <img src="img/ch5s.png" onmouseover="this.src='img/ch5sc.png';" onmouseout="this.src='img/ch5s.png';"/>
+        <img src="img/ch6s.png" onmouseover="this.src='img/ch6sc.png';" onmouseout="this.src='img/ch6s.png';"/>
+
+        <img src="img/ch7s.png" onmouseover="this.src='img/ch7sc.png';" onmouseout="this.src='img/ch7s.png';"/>
+        <img src="img/ch8s.png" onmouseover="this.src='img/ch8sc.png';" onmouseout="this.src='img/ch8s.png';"/>
+        <img src="img/ch9s.png" onmouseover="this.src='img/ch9sc.png';" onmouseout="this.src='img/ch9s.png';"/>
+
+        
+        <script>
+            var sound1 = new buzz.sound("walking.wav");
+            var sound2 = new buzz.sound("bike.mp3");
+            var sound3 = new buzz.sound("jogging.wav");
+            var sound4 = new buzz.sound("dog.wav");
+            var sound5 = new buzz.sound("sitting.wav");
+            var sound6 = new buzz.sound("swimming.wav");
+            var sound7 = new buzz.sound("hiking.wav");
+            var sound8 = new buzz.sound("boat.wav");
+            var sound9 = new buzz.sound("diving.wav");
+            
+     
+            window.onload = function() {
+                document.getElementById('walking').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('bike').addEventListener('mouseover', function () {sound2.play(); });
+                document.getElementById('jogging').addEventListener('mouseover', function () {sound3.play(); });
+                document.getElementById('dog').addEventListener('mouseover', function () {sound4.play(); });
+                document.getElementById('sitting').addEventListener('mouseover', function () {sound5.play(); }); 
+                document.getElementById('swimming').addEventListener('mouseover', function () {sound6.play(); }); 
+                document.getElementById('hiking').addEventListener('mouseover', function () {sound7.play(); }); 
+                document.getElementById('boat').addEventListener('mouseover', function () {sound8.play(); }); 
+                document.getElementById('diving').addEventListener('mouseover', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
+
+
